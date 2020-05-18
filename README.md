@@ -1,4 +1,6 @@
 # livestream_km
 OBS Setting 
+rtmp:// ( your server ) /live/ 
 
-rtmp:// < your server ip > :1935 /live/<your stream key> 
+# client
+rtmp:// ( your server ) /live/ (yourkey by obs )

@@ -5,7 +5,12 @@ services:
         ports:
             - '1935:1935'
             - '8080:8080'
+            - '443:443'
+            - '80:80'
         image: jasonrivers/nginx-rtmp
         volumes:
             - ./nginx.conf:/opt/nginx/conf/nginx.conf
-
+            - ./error.log:/var/log/nginx/error.log
+            - ./custom.crt:/opt/nginx/conf/custom.crt
+            - ./custom.key:/opt/nginx/conf/custom.key
+            - ./www:/var/www

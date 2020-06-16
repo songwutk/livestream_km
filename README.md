@@ -22,3 +22,5 @@ cat  /etc/letsencrypt/live/ (example.com) /fullchain.pem >custom.crt
 
 cat  /etc/letsencrypt/live/ (example.com) /privkey.pem >custom.key
 
+
+vlc player  url test https://(your server)/hls/(yourkey).m3u8

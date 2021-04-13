@@ -6,21 +6,6 @@ rtmp:// ( your server ):1935 /live/
 rtmp:// ( your server ):1935 /live/ (yourkey by obs )
 
 
-Let's encrypt cert
-
-https://certbot.eff.org/docs/using.html#manual
-
-
-certbot certonly --cert-name example.com -d example.com
-
-
-select 2 
-type www
-
-
-cat  /etc/letsencrypt/live/ (example.com) /fullchain.pem >custom.crt
-
-cat  /etc/letsencrypt/live/ (example.com) /privkey.pem >custom.key
-
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout output.key -out output.crt
 
 vlc player  url test https://(your server)/hls/(yourkey).m3u8

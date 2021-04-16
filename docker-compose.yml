@@ -14,3 +14,4 @@ services:
             - ./custom.crt:/opt/nginx/conf/custom.crt
             - ./custom.key:/opt/nginx/conf/custom.key
             - ./www:/var/www
+            - ./rec:/rec
